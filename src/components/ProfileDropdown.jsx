@@ -2,71 +2,35 @@ import React from "react";
 const ProfileDropdown = () => {
   return (
     <div className="col d-flex mt-2 justify-content-between">
-      <div className="navbar-arrow d-flex ml-5">
-        <div className="PreviousArrow">
-          {/* <img src="./images/Previous-Arrow--.png" alt="Profileimg"
-         className="img-fluid" width="30px;" height="30px;" 
-         style="border-radius: 50%"/> */}
-          <p>right</p>
+      <div className="btn-group ml-5">
+        <button
+          className="btn bg-black btn-sm dropdown-toggle rounded-pill border-0"
+          type="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            className="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+            />
+          </svg>
+          Diego Ziba Bano..
+        </button>
+        <div className="dropdown-menu">
+          <ul>
+            <li>Log out</li>
+          </ul>
         </div>
-        <div className="nextArrow mx-2">
-          {/* <img src="./images/next-arrow-2938996-2429434.png" alt="Profileimg"
-         class="img-fluid ml-3" width="30px;" height="30px;" 
-         style="border-radius: 50%"/> */}
-          <p>left</p>
-        </div>
-      </div>
-
-      <div className="mr-4">
-        <ul className="navbar-nav">
-          <button className="ProfileBtn btn bg-dark">
-            <li className="nav-item dropdown d-flex mb-2">
-              <div className="d-flex">
-                <img
-                  src="./images/Sherlock_Holmes_profilepic.jpeg"
-                  alt="Profileimg"
-                  className="mt-1"
-                  width="30px"
-                  height="30px"
-                  //   style={{border-radius: 50%}}
-                />
-                <a
-                  className="nav-link dropdown-toggle mx-2 text-light"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Diego ziba
-                </a>
-                <ul
-                  className="dropdown-menu mx-2 text-light"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <li>
-                    <a className="dropdown-item" href="login.html">
-                      Profile
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="login.html">
-                      Settings
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Help
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </button>
-        </ul>
       </div>
     </div>
   );
