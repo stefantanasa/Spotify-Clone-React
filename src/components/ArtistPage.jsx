@@ -1,22 +1,32 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Sidebar from "./Sidebar";
-import ProfileDropdown from "./ProfileDropdown";
+import { Card } from "react-bootstrap";
 import Player from "./Player";
-import { Col, Row } from "react-bootstrap";
+import ProfileDropdown from "./ProfileDropdown";
+import Sidebar from "./Sidebar";
+import SongCard from "./SongCard";
+import AlbumCard from "./AlbumCard";
+import { Row, Container, Col } from "react-bootstrap";
+import SongsSection from "./SongsSection";
+import IndexJumbo from "./IndexJumbo";
 import JumbotronArtist from "./JumbotronArtist";
+import ListOptions from "./ListOptions";
 import SongList from "./SongList";
 
-const ArtistPage = () => {
+const Index = () => {
   return (
     <React.Fragment>
       <Row>
-        <Col md={3}>
+        <Col md={2}>
           <Sidebar />
         </Col>
         <Col>
+          <ProfileDropdown />
           <JumbotronArtist />
-
+          <ListOptions />
+          <SongList />
+          <SongList />
+          <SongList />
+          <SongList />
           <Player />
         </Col>
       </Row>
@@ -24,4 +34,4 @@ const ArtistPage = () => {
   );
 };
 
-export default ArtistPage;
+export default Index;

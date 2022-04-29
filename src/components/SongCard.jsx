@@ -2,8 +2,8 @@ import React from "react";
 
 const SongCard = () => {
   return (
-    <div className="row flex-nowrap row-overflow">
-      <div className="card" style={{ maxWidth: "250px" }}>
+    <div className="row flex-nowrap row-overflow m-2">
+      <div className="card" style={{ maxWidth: "170px" }}>
         <div className="card-image-container">
           <div className="play-btn"></div>
           <div className="ratio ratio-1x1">

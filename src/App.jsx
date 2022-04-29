@@ -8,15 +8,13 @@ import ArtistPage from "./components/ArtistPage";
 function App() {
   return (
     <div className="App">
-      <Container>
-        <BrowserRouter>
-          <Routes>
-            <Route path={"/"} element={<Index />} />
-            <Route path={"/album-page/"} element={<AlbumPage />} />
-            <Route path={"/artist-page/"} element={<ArtistPage />} />
-          </Routes>
-        </BrowserRouter>
-      </Container>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Index />} />
+          <Route path={"/album-page/"} element={<AlbumPage />} />
+          <Route path={"/artist-page/"} element={<ArtistPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

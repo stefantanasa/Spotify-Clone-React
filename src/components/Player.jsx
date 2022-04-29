@@ -2,7 +2,7 @@ import React from "react";
 
 const Player = () => {
   return (
-    <div className="music-player">
+    <div className="music-player mt-4">
       <div className="song-bar">
         <div className="song-infos">
           <div className="image-container">
@@ -12,7 +12,7 @@ const Player = () => {
             />
           </div>
           <div className="song-description">
-            <p className="title">Dynasties & Dystopia</p>
+            <p className="title">Dynasties &amp; Dystopia</p>
             <p className="artist">Denzel curry</p>
           </div>
         </div>
@@ -23,7 +23,7 @@ const Player = () => {
       </div>
       <div className="progress-controller">
         <div className="control-buttons mt-5 pb-0">
-          <i className="bi bi-shuffle">sdasd</i>
+          <i className="bi bi-shuffle"></i>
           <i className="bi bi-skip-start-fill"></i>
           <i className="play-pause bi bi-play-circle-fill"></i>
           <i className="bi bi-skip-end-fill"></i>
@@ -37,7 +37,7 @@ const Player = () => {
           <span>2:58</span>
         </div>
       </div>
-      <div className="other-features">
+      <div className="other-features ">
         <i className="bi bi-list-ul"></i>
         <i className="bi bi-pc-display"></i>
         <div className="volume-bar">

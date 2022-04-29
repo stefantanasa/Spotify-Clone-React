@@ -2,9 +2,8 @@ import React from "react";
 
 const AlbumCard = () => {
   return (
-    <div className="bg-dark">
-      <h1>AlbumCard</h1>
-      <div className="Albumcard card mb-3" style={{ maxWidth: "400px" }}>
+    <div className="">
+      <div className="Albumcard card m-2" style={{ maxWidth: "300px" }}>
         <div className="row g-0">
           <div className="col-md-4">
             <img
